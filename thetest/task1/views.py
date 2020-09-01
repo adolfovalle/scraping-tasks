@@ -6,9 +6,12 @@ import subprocess
 import instaloader
 
 def index(request):
+    
     loader = instaloader.Instaloader(compress_json=False)
-    lista_usernames= ["adasdas_studio","poco"]
+    lista_usernames= [}
+    #lista_usernames= ["adasdas_studio","poco"]
     lista_profiles = []
+
     for username in lista_usernames:
         profile = instaloader.Profile.from_username(loader.context, username)            
         lista_profiles.append(profile)
@@ -22,6 +25,6 @@ def index(request):
             t = Post(profile=p,mediaid=post.mediaid,date_utc=aware_datetime,caption=post.caption,video_view_count=post.video_view_count,likes=post.likes,comments=post.comments)
             t.save()
 
-    loader.download_profiles(lista_profiles, posts = False)
+    loader.download_profiles(lista_profiles)
 
     return HttpResponse("Hecho")
