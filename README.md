@@ -33,6 +33,7 @@ http://127.0.0.1:8000/task2
 To set up the input for this task, go to the file "task1/views.py" and add to the variable "lista_usernames" the list of Instagram usernames whose profiles you desire to perform the scraping on.
 
 When you execute this task it will download all the media files (images and videos) for all profiles of this given username list. 
+
 Additionally it will download the metadata (profile username, userid, number of followers, number of followees, and post id, date, caption, along with the number of likes, comments and views) for all these posts into the SQLite database created by Django (db.sqlite3).
 
 Note: The profiles have to be public for the scraping to work properly.
@@ -43,7 +44,7 @@ TODO:
 
 # Setting up Task 2
 
-Task 2 executes scraping on the website "elpais.com" (spanish), it's supposed to obtain data from all video articles on the cover page (Article URL, title, text, and publish date), and saving it into the SQLite database, it does not require input.
+Task 2 executes scraping on the website "elpais.com" (spanish), it's supposed to obtain data from all video articles on the cover page (Article URL, title, text, and publish date), and save it into the SQLite database, it does not require input.
 
 TODO:
 - [ ] Make BeautifulSoup recognize more than one video article on the page.
