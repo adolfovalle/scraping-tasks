@@ -47,6 +47,6 @@ TODO:
 Task 2 executes scraping on the website "elpais.com" (spanish), it's supposed to obtain data from all video articles on the cover page (Article URL, title, text, and publish date), and save it into the SQLite database, it does not require input.
 
 TODO:
-- [ ] Make BeautifulSoup recognize more than one video article on the page.
-- [ ] Download the video file for all articles.
+- [x] Make BeautifulSoup recognize more than one video article on the page.
+- [x] Download the video file for all articles.
 - [ ] Format the date properly (currently handled as text).
