@@ -2,13 +2,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils.timezone import make_aware
 from task1.models import Post, Profile
-import subprocess
 import instaloader
 
 def index(request):
-    
+
     loader = instaloader.Instaloader(compress_json=False)
-    lista_usernames= [}
+    lista_usernames= []
     #lista_usernames= ["adasdas_studio","poco"]
     lista_profiles = []
 
